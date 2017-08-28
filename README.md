@@ -13,7 +13,7 @@
 
 *(to link Bootstrap)*
 
-* link href=“//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css” rel=“stylesheet”
+* link href=“https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css” rel=“stylesheet”
 
 *(to link Angular 1.6)*
 
