@@ -7,6 +7,6 @@
       controller: function() {
         console.log('hello from the controller')
       },
-      templateURL: 'app/templates/todo.html'
+      templateUrl: 'app/template/todo.html'
     })
 })()
