@@ -10,3 +10,5 @@
       templateUrl: 'app/template/todo.html'
     })
 })()
+
+// var dataWhole = angular.fromJSON(data)
