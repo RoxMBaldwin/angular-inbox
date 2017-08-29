@@ -49,7 +49,7 @@ This will be important for the next unit on testing, where you'll test each of t
 
 **Message Display**
 
-* - [ ] Users should see a list of messages with the correct styles
+* - [...] Users should see a list of messages with the correct styles
 
  - [ ] When a user views the app
  - [ ] Then they should see a list of messages with their subjects

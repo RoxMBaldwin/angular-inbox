@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="todoApp">
+<html ng-app="inboxApp">
   <head>
     <meta charset="utf-8">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/main.css">
     <title></title>
   </head>
   <body>
-    <main class="container">
-      <todo></todo>
+    <main>
+      <div class="container">
+        <composeform></composeform>
+        <messageexpanded></messageexpanded>
+        <messageread></messageread>
+        <messageselected></messageselected>
+        <messagestarred></messagestarred>
+        <messageunread></messageunread>
+        <messagewithlabels></messagewithlabels>
+      </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
     <script src="app/app.js" type="text/javascript"></script>
+    <script src="data/seed.js" type="text/javascript"></script>
   </body>
 </html>
