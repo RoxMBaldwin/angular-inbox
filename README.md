@@ -61,11 +61,11 @@ This will be important for the next unit on testing, where you'll test each of t
 
 **Starring**
 
-*  - [ ] Users should be able to star and unstar a message.
+*  - [x] Users should be able to star and unstar a message.
 
- - [ ] When a user clicks the star next to a message
- - [ ] Then it should toggle whether the message is starred or not
- - [ ] For example if it was starred, and you clicked on it, it should be unstarred
+ When a user clicks the star next to a message...
+ - [x] Then it should toggle whether the message is starred or not
+ *For example if it was starred, and you clicked on it, it should be unstarred*
 
 **Selecting Individual Messages**
 

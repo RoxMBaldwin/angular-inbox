@@ -15,6 +15,7 @@
       </div>
       <div class="col-xs-2">
         <i class="star fa"
+        ng-click="$ctrl.toggleStar(message)"
         ng-class="{
           'fa-star' : message.starred ,
           'fa-star-o' : !message.starred
