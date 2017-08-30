@@ -1,0 +1,31 @@
+<div class="row message"
+  ng-repeat = "message in $ctrl.messages"
+  ng-class  = "{
+    read : message.read,
+    selected : selected,
+  }"
+  >
+  <div class="col-xs-1">
+    <div class="row">
+      <div class="col-xs-2">
+        <input type="checkbox"
+        ng-model="selected"
+        >
+      </div>
+      <div class="col-xs-2">
+        <i class="star fa"
+        ng-class="{
+          'fa-star' : message.starred ,
+          'fa-star-o' : !message.starred
+        }"
+        ng-click="$ctrl.markup(message)"
+        ></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-11">
+    <a href="#">
+      {{message.subject}}
+    </a>
+  </div>
+</div>

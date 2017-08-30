@@ -51,7 +51,7 @@ This will be important for the next unit on testing, where you'll test each of t
 
 * - [...] Users should see a list of messages with the correct styles
 
- - [ ] When a user views the app
+ - [ ] When a user views the app...
  - [ ] Then they should see a list of messages with their subjects
  - [ ] If the message is read, it should have the read style
  - [ ] If the message is unread, it should have the unread
