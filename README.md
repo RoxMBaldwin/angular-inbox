@@ -49,15 +49,15 @@ This will be important for the next unit on testing, where you'll test each of t
 
 **Message Display**
 
-* - [...] Users should see a list of messages with the correct styles
+* - [x] Users should see a list of messages with the correct styles
 
- - [ ] When a user views the app...
- - [ ] Then they should see a list of messages with their subjects
- - [ ] If the message is read, it should have the read style
- - [ ] If the message is unread, it should have the unread
- - [ ] If the message is selected, it should have the selected style and the box should be checked
- - [ ] If there are labels on a message, they should appear
- - [ ] If the message is starred, then the star should be filled in, otherwise it should be empty
+  When a user views the app...
+ - [x] Then they should see a list of messages with their subjects
+ - [x] If the message is read, it should have the read style
+ - [x] If the message is unread, it should have the unread
+ - [x] If the message is selected, it should have the selected style and the box should be checked
+ - [x] If there are labels on a message, they should appear
+ - [x] If the message is starred, then the star should be filled in, otherwise it should be empty
 
 **Starring**
 

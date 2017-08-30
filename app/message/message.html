@@ -2,6 +2,7 @@
   ng-repeat = "message in $ctrl.messages"
   ng-class  = "{
     read : message.read,
+    unread : !message.read,
     selected : selected,
   }"
   >
@@ -18,12 +19,14 @@
           'fa-star' : message.starred ,
           'fa-star-o' : !message.starred
         }"
-        ng-click="$ctrl.markup(message)"
         ></i>
       </div>
     </div>
   </div>
   <div class="col-xs-11">
+    <span class="label label-warning"
+    ng-repeat="labels in message.labels"
+    >{{labels}}</span>
     <a href="#">
       {{message.subject}}
     </a>
