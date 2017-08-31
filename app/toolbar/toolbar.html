@@ -9,12 +9,12 @@
       <i class="fa fa-plus"></i>
     </a> -->
 
-    <button class="btn btn-default">
+    <button class="btn btn-default"
+    ng-click="$ctrl.messageState($ctrl.toolbar)"
+    >
       <i class="fa "
-        ng-click="$ctrl.messageState($ctrl.toolbar)"
-        ng-class="{
+      ng-class="{
         'fa-check-square-o' : true
-
       }"
       ></i>
     </button>
