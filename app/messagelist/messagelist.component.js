@@ -3,8 +3,12 @@
   angular
   .module('inboxApp')
   .component('messagelist', {
+     bindings: {
+      messagelistselected : '<',
+    },
     controller: function() {
-      console.log('messagelist working')
+      const vm=this
+    console.log(vm);
     },
     templateUrl: 'app/messagelist/messagelist.html'
   })

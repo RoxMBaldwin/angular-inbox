@@ -1,9 +1,9 @@
 <div class="row message"
-  ng-repeat = "message in $ctrl.messages"
+
   ng-class  = "{
-    read : message.read,
-    unread : !message.read,
-    selected : selected,
+    read : $ctrl.messageselected.read,
+    unread : !$ctrl.messageselected.read,
+    selected : $ctrl.messageselected.selected,
   }"
   >
   <div class="col-xs-1">
@@ -11,14 +11,16 @@
       <div class="col-xs-2">
         <input type="checkbox"
         ng-model="selected"
+        ng-checked="$ctrl.messageselected.selected"
+        ng-click="$ctrl.selectedMessage(selected, $ctrl.messageselected)"
         >
       </div>
       <div class="col-xs-2">
         <i class="star fa"
-        ng-click="$ctrl.toggleStar(message)"
+        ng-click="$ctrl.toggleStar($ctrl.messageselected)"
         ng-class="{
-          'fa-star' : message.starred ,
-          'fa-star-o' : !message.starred
+          'fa-star' : $ctrl.messageselected.starred ,
+          'fa-star-o' : !$ctrl.messageselected.starred
         }"
         ></i>
       </div>
@@ -26,10 +28,10 @@
   </div>
   <div class="col-xs-11">
     <span class="label label-warning"
-    ng-repeat="labels in message.labels"
+    ng-repeat="labels in $ctrl.messageselected.labels"
     >{{labels}}</span>
     <a href="#">
-      {{message.subject}}
+      {{$ctrl.messageselected.subject}}
     </a>
   </div>
 </div>

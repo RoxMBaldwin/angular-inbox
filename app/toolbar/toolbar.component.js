@@ -3,8 +3,21 @@
   angular
   .module('inboxApp')
   .component('toolbar', {
+      bindings: {
+        toolbar : '<'
+      },
     controller: function() {
-      console.log('toolbar working')
+      const vm = this
+      vm.messageState= function(data){
+        console.log("fggdgdgdfg");
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+          data[i].selected=true
+        }
+
+      }
+
+
     },
     templateUrl: 'app/toolbar/toolbar.html'
   })

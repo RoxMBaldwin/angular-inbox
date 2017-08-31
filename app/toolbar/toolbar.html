@@ -5,14 +5,20 @@
       unread messages
     </p>
 
-    <a class="btn btn-danger">
+    <!-- <a class="btn btn-danger">
       <i class="fa fa-plus"></i>
-    </a>
+    </a> -->
 
     <button class="btn btn-default">
-      <i class="fa fa-minus-square-o"></i>
-    </button>
+      <i class="fa "
+        ng-click="$ctrl.messageState($ctrl.toolbar)"
+        ng-class="{
+        'fa-check-square-o' : true
 
+      }"
+      ></i>
+    </button>
+<!-- fa fa-minus-square-o, fa fa-square-o, fa fa-check-square-o -->
     <button class="btn btn-default">Mark As Read</button>
 
     <button class="btn btn-default">Mark As Unread</button>

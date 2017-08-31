@@ -69,19 +69,19 @@ This will be important for the next unit on testing, where you'll test each of t
 
 **Selecting Individual Messages**
 
-*  - [ ] Users should be able to select and deselect individual messages.
+*  - [x] Users should be able to select and deselect individual messages.
 
- - [ ] When a user checks the checkbox on a message
- - [ ] Then the message should be highlighted
+ When a user checks the checkbox on a message
+ - [x] Then the message should be highlighted
 
- - [ ] When a user unchecks the checkbox on a message
- - [ ] Then the message should not_be highlighted
+ When a user unchecks the checkbox on a message
+ - [x] Then the message should not_be highlighted
 
 **Bulk Select / Deselect**
 
-*  - [ ] Users should be able to select and deselect messages.
+*  - [x] Users should be able to select and deselect messages.
 
- - [ ] Given that no messages are selected
+ Given that no messages are selected...
  - [ ] When a user checks the "Select All" checkbox
  - [ ] Then it should check all messages (and highlight them)
 
