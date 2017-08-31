@@ -6,6 +6,7 @@
 
     controller: function() {
       const vm = this
+      console.log(vm)
 
       vm.$onInit=function(){
         var data = angular.fromJson(json)

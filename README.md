@@ -85,9 +85,9 @@ This will be important for the next unit on testing, where you'll test each of t
  - [ ] When a user checks the "Select All" checkbox
  - [ ] Then it should check all messages (and highlight them)
 
- - [ ] Given that some messages are selected
- - [ ] When a user checks the "Select All" checkbox
- - [ ] Then it should check all messages (and highlight them)
+ - [x] Given that some messages are selected
+ - [x] When a user checks the "Select All" checkbox
+ - [x] Then it should check all messages (and highlight them)
 
  - [ ] Given that all messages are selected
  - [ ] When a user unchecks the "Select All" checkbox
