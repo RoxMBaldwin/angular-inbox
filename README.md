@@ -1,7 +1,9 @@
 # angular-inbox
 ## Building an inbox with Angular 1.6
 
-* [A styleguide for the Inbox frontend project](https://github.com/gSchool/inbox-styleguide)
+[Angular 1.X Inbox Deployed Site](https://week3project-ee31f.firebaseapp.com/)
+
+[A styleguide for the Inbox frontend project](https://github.com/gSchool/inbox-styleguide)
 
 ### Setup HTML & CSS
 
