@@ -10,12 +10,13 @@
     </a> -->
 
     <button class="btn btn-default"
-    ng-click="$ctrl.messageState($ctrl.toolbar)"
-    >
+      ng-click="$ctrl.messageState($ctrl.datatoolbar)">
       <i class="fa "
-      ng-class="{
-        'fa-check-square-o' : true
-      }"
+        ng-class="{
+        'fa-minus-square-o' : $ctrl.allMsg($ctrl.datatoolbar),
+        'fa-square-o' : $ctrl.noMsg($ctrl.datatoolbar),
+        'fa-check-square-o' : $ctrl.someMsg($ctrl.datatoolbar)
+        }"
       ></i>
     </button>
 <!-- fa fa-minus-square-o, fa fa-square-o, fa fa-check-square-o -->

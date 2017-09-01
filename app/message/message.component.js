@@ -16,10 +16,6 @@
           //  console.log(messages);
           }
 
-          vm.selectmessage = function(selected) {
-              //    console.log(selected)
-                //console.log(vm.anything);
-               }
           vm.toggleStar = function(message){
             message.starred = !message.starred
             }

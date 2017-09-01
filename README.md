@@ -3,25 +3,33 @@
 
 * [A styleguide for the Inbox frontend project](https://github.com/gSchool/inbox-styleguide)
 
-### Setup CSS
+### Setup HTML & CSS
 
 **In index.html add the following:**
 
 *(to link Font Awesome)*
 
-* link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+```[js]
+<link> href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" </link>
+```
 
 *(to link Bootstrap Theme)*
 
-* link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"
+```[js]
+ <link> rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" </link>
+ ```
 
 *(to link Bootstrap)*
 
-* link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
+```[js]
+<link> rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" </link>
+```
 
 *(to link Angular 1.6)*
 
-* script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" /script
+```[js]
+<script> src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" </script>
+```
 
 *Make sure to link other files you are working in*
 
@@ -82,16 +90,16 @@ This will be important for the next unit on testing, where you'll test each of t
 *  - [x] Users should be able to select and deselect messages.
 
  Given that no messages are selected...
- - [ ] When a user checks the "Select All" checkbox
- - [ ] Then it should check all messages (and highlight them)
+ - [x] When a user checks the "Select All" checkbox
+ - [x] Then it should check all messages (and highlight them)
 
  - [x] Given that some messages are selected
  - [x] When a user checks the "Select All" checkbox
  - [x] Then it should check all messages (and highlight them)
 
- - [ ] Given that all messages are selected
- - [ ] When a user unchecks the "Select All" checkbox
- - [ ] Then it should uncheck all messages (and unhighlight them)
+ - [x] Given that all messages are selected
+ - [x] When a user unchecks the "Select All" checkbox
+ - [x] Then it should uncheck all messages (and unhighlight them)
 
 **Marking Messages as Read**
 
