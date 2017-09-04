@@ -4,7 +4,7 @@
   .module('inboxApp')
   .component('message', {
     bindings: {
-      messageselected : '<',
+      messageselected : '<'
     },
     controller: function() {
 
@@ -13,6 +13,7 @@
 
           vm.selectedMessage = function(selected, messages){
             messages.selected = selected
+
           //  console.log(messages);
           }
 

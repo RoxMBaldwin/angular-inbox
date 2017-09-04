@@ -120,10 +120,10 @@ When all messages are checked:
 
 **Marking Messages as Read**
 
-*  - [ ] Users should be able to mark messages as read.
+*  - [x] Users should be able to mark messages as read.
 
 When a user selects messages and presses "Mark As Read":
- - [ ] Then each selected message should be marked as read (and should no longer be bold)
+ - [x] Then each selected message should be marked as read (and should no longer be bold)
 
 **Marking Messges as Unread**
 

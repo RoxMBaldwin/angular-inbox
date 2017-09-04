@@ -4,7 +4,7 @@
   .module('inboxApp')
   .component('messagelist', {
      bindings: {
-      messagelistselected : '<',
+      messagelistselected : '<'
     },
     controller: function() {
       const vm=this
