@@ -127,10 +127,10 @@ When a user selects messages and presses "Mark As Read":
 
 **Marking Messges as Unread**
 
-*  - [ ] Users should be able to mark messages as unread.
+*  - [x] Users should be able to mark messages as unread.
 
 When a user selects messages and presses "Mark As Unread":
- - [ ] Then each selected message should be marked as unread (and should should appear bold)
+ - [x] Then each selected message should be marked as unread (and should should appear bold)
 
 **Deleting Messages**
 

@@ -68,6 +68,16 @@
       }
     }
 
+    vm.markunread = function(data){
+      for(var i = 0; i < data.length; i++){
+        if(data[i].selected){
+          data[i].read = false
+        } else {
+          data[i].read = true
+        }
+      }
+    }
+
     },
     templateUrl: 'app/toolbar/toolbar.html'
   })
