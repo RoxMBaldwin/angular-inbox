@@ -152,7 +152,7 @@ When a user selects messages from the sidebar and chooses a label from the "Add 
 **Removing Labels**
 
 When a user selects messages from the sidebar and chooses a label from the "Remove Label" dropdown:
- - [ ] That label should be removed from all of the selected messages that contain the label
+ - [x] That label should be removed from all of the selected messages that contain the label
 
 *NOTE: It's OK to hard-code the list of labels && If you try to remove a label from a message that doesn't have that label, there should be no errors*
 
