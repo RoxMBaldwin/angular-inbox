@@ -128,7 +128,28 @@
         .then(function(response){
           console.log('deleted')
         })
-    
+
+    }
+
+    vm.addlabel = function(label, messages){
+      var arr = []
+      for(var i = 0; i < messages.length; i++){
+        var labelExists = messages[i].labels.includes(label)
+        if (messages[i].selected && !labelExists){
+          messages[i].labels.push(label)
+          arr.push(messages[i].id)
+          var body = {
+            message_id: messages[i].id,
+            command: 'addLabel',
+            label : label
+          }
+          const url = 'https://young-bastion-40394.herokuapp.com/api'
+          $http.patch(url + '/messages/', body)
+            .then(function(response){
+              console.log('new label')
+            })
+        }
+      }
     }
 
     },

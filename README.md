@@ -146,7 +146,7 @@ When a user selects a message and presses "Delete" (the Trash icon):
 **Adding Labels**
 
 When a user selects messages from the sidebar and chooses a label from the "Add Label" dropdown:
- - [ ] That label should be added to all selected messages
+ - [x] That label should be added to all selected messages
 *NOTE: if the message already contains the label then it should not be added twice && It's OK to hard-code the list of labels*
 
 **Removing Labels**

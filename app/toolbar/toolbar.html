@@ -28,7 +28,9 @@
     ng-click="$ctrl.markunread($ctrl.datatoolbar)"
     >Mark As Unread</button>
 
-    <select class="form-control label-select">
+    <select class="form-control label-select"
+    ng-model="selectedLabel"
+    ng-change="$ctrl.addlabel(selectedLabel, $ctrl.datatoolbar)">
       <option>Apply label</option>
       <option value="dev">dev</option>
       <option value="personal">personal</option>
