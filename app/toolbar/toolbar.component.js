@@ -78,6 +78,15 @@
       }
     }
 
+    vm.removeselected = function(data){
+      for(var i = 0; i < data.length; i++){
+        if(data[i].selected){
+          // console.log(data[i].selected)
+          data.splice(i, 1)
+        }
+      }
+    }
+
     },
     templateUrl: 'app/toolbar/toolbar.html'
   })

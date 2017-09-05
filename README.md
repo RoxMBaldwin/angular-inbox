@@ -137,9 +137,9 @@ When a user selects messages and presses "Mark As Unread":
 *  - [ ] Users should be able to delete selected messages
 
 When a user selects a message and presses "Delete" (the Trash icon):
- - [ ] Then each selected message should be removed from the list
+ - [x] Then each selected message should be removed from the list
  - [ ] And the unread count should update
- - [ ] And "Select All" button should update
+ - [x] And "Select All" button should update
 
 **Adding Labels**
 
