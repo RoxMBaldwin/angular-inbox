@@ -169,3 +169,65 @@ When a user changes which messages are read / unread:
 **Select All Button State**
 
  - [ ] Users should not be able to click on toolbar items when no messages are selected
+
+## API Integration
+
+[Set up the API server setup locally](https://github.com/RoxMBaldwin/hypermedia-api-server)
+
+### General Stories:
+
+**Post all of the actions:**
+
+ - [x] star / unstar
+ - [ ] mark read / unread
+ - [ ] add / remove labels
+ - [ ] delete
+
+**Add a 'compose' view:**
+
+ - [ ] form appears when the |+| button is clicked
+ - [ ] new entry is added to sidebar
+
+### Specific Stories:
+
+**Load the messages from the Server**
+
+When a user goes to your inbox app:
+ - [x] the messages they see should be the ones loaded from the Server
+
+**Actions should update the server-side**
+
+When a user stars or unstars a message and then reloads the page:
+ - [x] the data is persisted: the message stays starred / unstarred
+
+When a user marks messsages read or unread and refreshes the page:
+ - [ ] the data is persisted: the message stays marked as read / unread
+
+When a user deletes messages and refreshes the page:
+ - [ ] the data is persisted: the messages stay deleted
+
+When a user adds or removes labels and refreshes the page:
+ - [ ] the data is persisted: the labels stay removed or added
+
+**Add the ability to compose messages**
+
+When a user goes to the app:
+ - [ ] they should see a red plus button
+
+When the user clicks the |+| button:
+ - [ ] the compose form appears
+
+When the user fills out the subject and body and pressed Send:
+ - [ ] the compose forms disappears
+ - [ ] the message appears on the page
+
+When the user refreshes the page:
+ - [ ] the data is persisted: the new message still appears in the sidebar
+
+![Compose Form Load](Images/inbox-compose-form-1.png)
+
+
+![Compose Form Load](Images/inbox-compose-form-2.png)
+
+When the user opens the compose form and presses the red compose button:
+ - [ ] the compose form should close

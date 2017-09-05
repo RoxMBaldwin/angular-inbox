@@ -18,7 +18,6 @@
           }
 
           vm.toggleStar = function(message){
-            //message.starred = !message.starred
 
             var body = {
               messageIds: [message.id],
