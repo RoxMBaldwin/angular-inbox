@@ -7,7 +7,7 @@
     controller: function($http) {
       const vm = this
       vm.$onInit=function(){
-        const url = 'http://localhost:8082/api'
+        const url = 'https://young-bastion-40394.herokuapp.com/api'
         $http.get(url + '/messages').then(function(messages){
           vm.messages = messages.data._embedded.messages
           console.log(messages.data._embedded.messages)

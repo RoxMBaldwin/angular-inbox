@@ -3,6 +3,8 @@
 
 [Angular 1.X Inbox Deployed Site](https://week3project-ee31f.firebaseapp.com/)
 
+[Angular 1.X Inbox Server](https://young-bastion-40394.herokuapp.com/)
+
 [A styleguide for the Inbox frontend project](https://github.com/gSchool/inbox-styleguide)
 
 ### Setup HTML & CSS

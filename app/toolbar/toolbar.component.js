@@ -10,9 +10,10 @@
       const vm = this
 
       vm.someMsg = function(data){
-        var counter = 0
-        for(var i = 0; i < data.length; i++){
-          if(data[i].selected){
+        if(data !== undefined){
+          var counter = 0
+          for(var i = 0; i < data.length; i++){
+            if(data[i].selected){
             counter++
           }
         }
@@ -20,34 +21,38 @@
           return true
         } else {
           return false
-        }
+        }}
       }
 
       vm.allMsg = function(data){
-        var counter = 0
-        for(var i = 0; i < data.length; i++){
-          if(data[i].selected){
-            counter++
+        if(data !== undefined){
+          var counter = 0
+          for(var i = 0; i < data.length; i++){
+            if(data[i].selected){
+              counter++
+            }
           }
-        }
-        if( counter === data.length){
-          return true
-        } else {
-          return false
+          if( counter === data.length){
+            return true
+          } else {
+            return false
+          }
         }
       }
 
       vm.noMsg = function(data){
-        var counter = 0
-        for(var i = 0; i < data.length; i++){
-          if(data[i].selected){
-            counter++
+        if(data !== undefined){
+          var counter = 0
+          for(var i = 0; i < data.length; i++){
+            if(data[i].selected){
+              counter++
+            }
           }
-        }
-        if( counter === 0){
-          return true
-        } else {
-          return false
+          if( counter === 0){
+            return true
+          } else {
+            return false
+          }
         }
       }
 
@@ -83,6 +88,7 @@
         if(data[i].selected){
           // console.log(data[i].selected)
           data.splice(i, 1)
+          i--
         }
       }
     }
