@@ -109,13 +109,26 @@
     }
 
     vm.removeselected = function(data){
+      var arr = []
       for(var i = 0; i < data.length; i++){
         if(data[i].selected){
-          // console.log(data[i].selected)
+          arr.push(data[i].id)
           data.splice(i, 1)
           i--
         }
       }
+
+      var body = {
+        messageIds: arr,
+        command: 'delete'
+      }
+
+      const url = 'https://young-bastion-40394.herokuapp.com/api'
+      $http.patch(url + '/messages', JSON.stringify(body))
+        .then(function(response){
+          console.log('deleted')
+        })
+    
     }
 
     },

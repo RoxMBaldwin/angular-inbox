@@ -204,7 +204,7 @@ When a user marks messsages read or unread and refreshes the page:
  - [x] the data is persisted: the message stays marked as read / unread
 
 When a user deletes messages and refreshes the page:
- - [ ] the data is persisted: the messages stay deleted
+ - [x] the data is persisted: the messages stay deleted
 
 When a user adds or removes labels and refreshes the page:
  - [ ] the data is persisted: the labels stay removed or added
