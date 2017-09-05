@@ -14,7 +14,7 @@
           vm.selectedMessage = function(selected, messages){
             messages.selected = selected
 
-          //  console.log(messages);
+          console.log(messages);
           }
 
           vm.toggleStar = function(message){
