@@ -6,7 +6,7 @@
       bindings: {
         datatoolbar : '<',
       },
-    controller: function() {
+    controller: function($http) {
       const vm = this
 
       vm.someMsg = function(data){
@@ -64,23 +64,48 @@
     }
 
     vm.markread = function(data){
+      var arr = []
       for(var i = 0; i < data.length; i++){
         if(data[i].selected){
           data[i].read = true
-        } else {
-          data[i].read = false
+          arr.push(data[i].id)
         }
       }
+
+      var body = {
+        messageIds: arr,
+        command: 'read',
+        read : true
+      }
+
+      const url = 'https://young-bastion-40394.herokuapp.com/api'
+      $http.patch(url + '/messages', JSON.stringify(body))
+        .then(function(response){
+          console.log('readddd')
+        })
     }
 
     vm.markunread = function(data){
+
+      var arr = []
       for(var i = 0; i < data.length; i++){
         if(data[i].selected){
           data[i].read = false
-        } else {
-          data[i].read = true
+          arr.push(data[i].id)
         }
       }
+
+      var body = {
+        messageIds: arr,
+        command: 'read',
+        read : false
+      }
+
+      const url = 'https://young-bastion-40394.herokuapp.com/api'
+      $http.patch(url + '/messages', JSON.stringify(body))
+        .then(function(response){
+          console.log('unreadddd')
+        })
     }
 
     vm.removeselected = function(data){

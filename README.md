@@ -179,7 +179,7 @@ When a user changes which messages are read / unread:
 **Post all of the actions:**
 
  - [x] star / unstar
- - [ ] mark read / unread
+ - [x] mark read / unread
  - [ ] add / remove labels
  - [ ] delete
 
@@ -201,7 +201,7 @@ When a user stars or unstars a message and then reloads the page:
  - [x] the data is persisted: the message stays starred / unstarred
 
 When a user marks messsages read or unread and refreshes the page:
- - [ ] the data is persisted: the message stays marked as read / unread
+ - [x] the data is persisted: the message stays marked as read / unread
 
 When a user deletes messages and refreshes the page:
  - [ ] the data is persisted: the messages stay deleted
