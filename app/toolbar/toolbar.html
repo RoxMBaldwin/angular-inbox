@@ -5,9 +5,9 @@
       unread messages
     </p>
 
-    <!-- <a class="btn btn-danger">
+    <a class="btn btn-danger">
       <i class="fa fa-plus"></i>
-    </a> -->
+    </a>
 
     <button class="btn btn-default"
       ng-click="$ctrl.messageState($ctrl.datatoolbar)">
@@ -19,34 +19,39 @@
         }"
       ></i>
     </button>
-<!-- fa fa-minus-square-o, fa fa-square-o, fa fa-check-square-o -->
+
     <button class="btn btn-default"
+    ng-disabled="$ctrl.noMsg($ctrl.datatoolbar)"
     ng-click="$ctrl.markread($ctrl.datatoolbar)"
     >Mark As Read</button>
 
     <button class="btn btn-default"
+    ng-disabled="$ctrl.noMsg($ctrl.datatoolbar)"
     ng-click="$ctrl.markunread($ctrl.datatoolbar)"
     >Mark As Unread</button>
 
-    <select class="form-control label-select"
+    <select defaultValue="none" class="form-control label-select"
+    ng-disabled="$ctrl.noMsg($ctrl.datatoolbar)"
     ng-model="selectedLabel"
     ng-change="$ctrl.addlabel(selectedLabel, $ctrl.datatoolbar)">
-      <option selected>Apply label</option>
+      <option value="none">Apply label</option>
       <option value="dev">dev</option>
       <option value="personal">personal</option>
       <option value="gschool">gschool</option>
     </select>
 
-    <select class="form-control label-select"
+    <select defaultValue="none"  class="form-control label-select"
+    ng-disabled="$ctrl.noMsg($ctrl.datatoolbar)"
     ng-model="selectedLabel"
     ng-change="$ctrl.removelabel(selectedLabel, $ctrl.datatoolbar)">
-      <option>Remove label</option>
+      <option value="none">Remove label</option>
       <option value="dev">dev</option>
       <option value="personal">personal</option>
       <option value="gschool">gschool</option>
     </select>
 
     <button class="btn btn-default"
+    ng-disabled="$ctrl.noMsg($ctrl.datatoolbar)"
     ng-click="$ctrl.removeselected($ctrl.datatoolbar)"
     >
       <i class="fa fa-trash-o"></i>

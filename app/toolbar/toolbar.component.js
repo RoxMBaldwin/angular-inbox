@@ -19,9 +19,7 @@
         }
         if( counter < data.length && counter > 0){
           return true
-        } else {
-          return false
-        }}
+        } }
       }
 
       vm.allMsg = function(data){
@@ -34,8 +32,6 @@
           }
           if( counter === data.length){
             return true
-          } else {
-            return false
           }
         }
       }
@@ -50,18 +46,29 @@
           }
           if( counter === 0){
             return true
-          } else {
-            return false
           }
         }
       }
 
       vm.messageState= function(data){
-        for(var i = 0; i < data.length; i++) {
-          data[i].selected=true
-
+        if (vm.allMsg(data)) {
+          for(var i = 0; i < data.length; i++) {
+          data[i].selected=false
+          }
         }
-    }
+
+        else if (vm.noMsg(data)) {
+          for(var i = 0; i < data.length; i++) {
+            data[i].selected=true
+          }
+        }
+
+        else if (vm.someMsg(data)) {
+          for(var i = 0; i < data.length; i++) {
+            data[i].selected=true
+          }
+        }
+      }
 
     vm.markread = function(data){
       var arr = []
