@@ -136,11 +136,11 @@ When a user selects messages and presses "Mark As Unread":
 
 **Deleting Messages**
 
-*  - [ ] Users should be able to delete selected messages
+*  - [x] Users should be able to delete selected messages
 
 When a user selects a message and presses "Delete" (the Trash icon):
  - [x] Then each selected message should be removed from the list
- - [ ] And the unread count should update
+ - [x] And the unread count should update
  - [x] And "Select All" button should update
 
 **Adding Labels**
@@ -158,13 +158,13 @@ When a user selects messages from the sidebar and chooses a label from the "Remo
 
 **Unread Message Count**
 
-*  - [ ] Users should always see the number of unread messages
+*  - [x] Users should always see the number of unread messages
 
 When a user changes which messages are read / unread:
- - [ ] The unread count in the upper right-hand corner should update
- - [ ] When there are 0 unread messages it should display "0 unread messages"
- - [ ] When there is 1 unread message it should display "1 unread message"
- - [ ] When there's more than 1 unread message it should display "_n_ unread messages"
+ - [x] The unread count in the upper right-hand corner should update
+ - [x] When there are 0 unread messages it should display "0 unread messages"
+ - [x] When there is 1 unread message it should display "1 unread message"
+ - [x] When there's more than 1 unread message it should display "_n_ unread messages"
 
 **Select All Button State**
 
@@ -180,8 +180,8 @@ When a user changes which messages are read / unread:
 
  - [x] star / unstar
  - [x] mark read / unread
- - [ ] add / remove labels
- - [ ] delete
+ - [x] add / remove labels
+ - [x] delete
 
 **Add a 'compose' view:**
 
@@ -207,7 +207,7 @@ When a user deletes messages and refreshes the page:
  - [x] the data is persisted: the messages stay deleted
 
 When a user adds or removes labels and refreshes the page:
- - [ ] the data is persisted: the labels stay removed or added
+ - [x] the data is persisted: the labels stay removed or added
 
 **Add the ability to compose messages**
 

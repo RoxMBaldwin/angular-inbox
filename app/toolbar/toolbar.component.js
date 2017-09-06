@@ -169,8 +169,19 @@
       const url = 'https://young-bastion-40394.herokuapp.com/api'
       $http.patch(url + '/messages/', body)
         .then(function(response){
-          console.log('removed label')
         })
+    }
+
+    vm.messagecount = function(messages){
+      if(messages !== undefined){
+        var counter = 0
+        for(var i = 0; i < messages.length; i++){
+          if(messages[i].read == false){
+            counter++
+          }
+        }
+          return counter
+      }
     }
 
     },

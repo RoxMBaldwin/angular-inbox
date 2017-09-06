@@ -9,12 +9,10 @@
     controller: function($http) {
 
       const vm = this
-    //  console.log(vm)
+
 
           vm.selectedMessage = function(selected, messages){
             messages.selected = selected
-
-          console.log(messages);
           }
 
           vm.toggleStar = function(message){

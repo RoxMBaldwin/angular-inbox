@@ -1,7 +1,7 @@
 <div class="row toolbar">
   <div class="col-md-12">
     <p class="pull-right">
-      <span class="badge badge">2</span>
+      <span class="badge badge">{{$ctrl.messagecount($ctrl.datatoolbar)}}</span>
       unread messages
     </p>
 
@@ -31,7 +31,7 @@
     <select class="form-control label-select"
     ng-model="selectedLabel"
     ng-change="$ctrl.addlabel(selectedLabel, $ctrl.datatoolbar)">
-      <option>Apply label</option>
+      <option selected>Apply label</option>
       <option value="dev">dev</option>
       <option value="personal">personal</option>
       <option value="gschool">gschool</option>

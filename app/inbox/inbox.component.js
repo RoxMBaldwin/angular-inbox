@@ -10,7 +10,6 @@
         const url = 'https://young-bastion-40394.herokuapp.com/api'
         $http.get(url + '/messages').then(function(messages){
           vm.messages = messages.data._embedded.messages
-          console.log(messages.data._embedded.messages)
         })
       }
    },
