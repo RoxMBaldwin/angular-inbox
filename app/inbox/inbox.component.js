@@ -13,6 +13,10 @@
           vm.formstatuses ={
             view:true
           }
+          vm.formsubmit = {
+            subject : "subject",
+            body : "body"
+          }
         })
       }
     },

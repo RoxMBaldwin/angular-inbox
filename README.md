@@ -186,7 +186,7 @@ When a user changes which messages are read / unread:
 **Add a 'compose' view:**
 
  - [x] form appears when the |+| button is clicked
- - [ ] new entry is added to sidebar
+ - [X] new entry is added to sidebar
 
 ### Specific Stories:
 
@@ -226,8 +226,8 @@ When the user opens the compose form and presses the red compose button:
  - [x] the compose form should close
 
 When the user fills out the subject and body and pressed Send:
- - [ ] the compose forms disappears
- - [ ] the message appears on the page
+ - [x] the compose forms disappears
+ - [x] the message appears on the page
 
 When the user refreshes the page:
- - [ ] the data is persisted: the new message still appears in the sidebar
+ - [x] the data is persisted: the new message still appears in the sidebar

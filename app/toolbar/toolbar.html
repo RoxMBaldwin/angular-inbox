@@ -32,11 +32,11 @@
     ng-click="$ctrl.markunread($ctrl.datatoolbar)"
     >Mark As Unread</button>
 
-    <select defaultValue="none" class="form-control label-select"
+    <select class="form-control label-select"
     ng-disabled="$ctrl.noMsg($ctrl.datatoolbar)"
     ng-model="selectedLabel"
     ng-change="$ctrl.addlabel(selectedLabel, $ctrl.datatoolbar)">
-      <option value="none">Apply label</option>
+      <option ng-default>Apply label</option>
       <option value="dev">dev</option>
       <option value="personal">personal</option>
       <option value="gschool">gschool</option>
