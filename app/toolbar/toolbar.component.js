@@ -5,6 +5,7 @@
   .component('toolbar', {
       bindings: {
         datatoolbar : '<',
+        plusicon : '<'
       },
     controller: function($http) {
       const vm = this
@@ -70,127 +71,138 @@
         }
       }
 
-    vm.markread = function(data){
-      var arr = []
-      for(var i = 0; i < data.length; i++){
-        if(data[i].selected){
+      vm.markread = function(data){
+        var arr = []
+        for(var i = 0; i < data.length; i++){
+          if(data[i].selected){
           data[i].read = true
           arr.push(data[i].id)
+          }
         }
-      }
 
-      var body = {
-        messageIds: arr,
-        command: 'read',
-        read : true
-      }
+        var body = {
+          messageIds: arr,
+          command: 'read',
+          read : true
+        }
 
-      const url = 'https://young-bastion-40394.herokuapp.com/api'
-      $http.patch(url + '/messages', JSON.stringify(body))
+        const url = 'https://young-bastion-40394.herokuapp.com/api'
+
+        $http.patch(url + '/messages', JSON.stringify(body))
         .then(function(response){
           console.log('readddd')
         })
-    }
+      }
 
-    vm.markunread = function(data){
+      vm.markunread = function(data){
 
-      var arr = []
-      for(var i = 0; i < data.length; i++){
+        var arr = []
+        for(var i = 0; i < data.length; i++){
         if(data[i].selected){
           data[i].read = false
           arr.push(data[i].id)
+          }
         }
-      }
 
-      var body = {
-        messageIds: arr,
-        command: 'read',
-        read : false
-      }
+        var body = {
+          messageIds: arr,
+          command: 'read',
+          read : false
+        }
 
-      const url = 'https://young-bastion-40394.herokuapp.com/api'
-      $http.patch(url + '/messages', JSON.stringify(body))
-        .then(function(response){
+        const url = 'https://young-bastion-40394.herokuapp.com/api'
+
+        $http.patch(url + '/messages', JSON.stringify(body))
+          .then(function(response){
           console.log('unreadddd')
         })
-    }
+      }
 
-    vm.removeselected = function(data){
-      var arr = []
-      for(var i = 0; i < data.length; i++){
-        if(data[i].selected){
-          arr.push(data[i].id)
-          data.splice(i, 1)
-          i--
+      vm.removeselected = function(data){
+        var arr = []
+        for(var i = 0; i < data.length; i++){
+          if(data[i].selected){
+            arr.push(data[i].id)
+            data.splice(i, 1)
+            i--
+          }
         }
-      }
 
-      var body = {
-        messageIds: arr,
-        command: 'delete'
-      }
+        var body = {
+          messageIds: arr,
+          command: 'delete'
+        }
 
-      const url = 'https://young-bastion-40394.herokuapp.com/api'
-      $http.patch(url + '/messages', JSON.stringify(body))
-        .then(function(response){
+        const url = 'https://young-bastion-40394.herokuapp.com/api'
+
+        $http.patch(url + '/messages', JSON.stringify(body))
+          .then(function(response){
           console.log('deleted')
-        })
+          })
+      }
 
-    }
-
-    vm.addlabel = function(label, messages){
-      var arr = []
-      for(var i = 0; i < messages.length; i++){
-        var labelExists = messages[i].labels.includes(label)
-        if (messages[i].selected && !labelExists){
-          messages[i].labels.push(label)
-          arr.push(messages[i].id)
+      vm.addlabel = function(label, messages){
+        var arr = []
+        for(var i = 0; i < messages.length; i++){
+          var labelExists = messages[i].labels.includes(label)
+          if (messages[i].selected && !labelExists){
+            messages[i].labels.push(label)
+            arr.push(messages[i].id)
+          }
         }
-      }
-      var body = {
-        messageIds: arr,
-        command: 'addLabel',
-        label : label
-      }
-      const url = 'https://young-bastion-40394.herokuapp.com/api'
-      $http.patch(url + '/messages/', body)
+
+        var body = {
+          messageIds: arr,
+          command: 'addLabel',
+          label : label
+        }
+
+        const url = 'https://young-bastion-40394.herokuapp.com/api'
+
+        $http.patch(url + '/messages/', body)
         .then(function(response){
           console.log('new label')
         })
-    }
-
-    vm.removelabel = function(label, messages){
-      var arr = []
-      for(var i = 0; i < messages.length; i++){
-        var labelExists = messages[i].labels.includes(label)
-        if (messages[i].selected){
-          messages[i].labels.pop(label)
-          arr.push(messages[i].id)
-        }
       }
-      var body = {
-        messageIds: arr,
-        command: 'removeLabel',
-        label: label
-      }
-      const url = 'https://young-bastion-40394.herokuapp.com/api'
-      $http.patch(url + '/messages/', body)
-        .then(function(response){
-        })
-    }
 
-    vm.messagecount = function(messages){
-      if(messages !== undefined){
-        var counter = 0
+      vm.removelabel = function(label, messages){
+        var arr = []
         for(var i = 0; i < messages.length; i++){
-          if(messages[i].read == false){
-            counter++
+          var labelExists = messages[i].labels.includes(label)
+          if (messages[i].selected){
+            messages[i].labels.pop(label)
+            arr.push(messages[i].id)
           }
         }
-          return counter
-      }
-    }
 
+        var body = {
+          messageIds: arr,
+          command: 'removeLabel',
+          label: label
+        }
+
+        const url = 'https://young-bastion-40394.herokuapp.com/api'
+
+        $http.patch(url + '/messages/', body)
+          .then(function(response){
+          })
+      }
+
+      vm.messagecount = function(messages){
+        if(messages !== undefined){
+          var counter = 0
+          for(var i = 0; i < messages.length; i++){
+            if(messages[i].read == false){
+              counter++
+            }
+          }
+          return counter
+        }
+      }
+
+      vm.formview = function(form){
+        form.view = !form.view
+      }
     },
     templateUrl: 'app/toolbar/toolbar.html'
   })

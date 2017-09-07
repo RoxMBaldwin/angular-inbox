@@ -3,8 +3,12 @@
   angular
   .module('inboxApp')
   .component('composeform', {
-    controller: function() {
-      //console.log('form working')
+      bindings: {
+        dataform : '<',
+        formstatus : '<'
+      },
+    controller: function($http) {
+
     },
     templateUrl: 'app/form/composeform.html'
   })

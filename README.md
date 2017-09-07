@@ -168,7 +168,7 @@ When a user changes which messages are read / unread:
 
 **Select All Button State**
 
- - [ ] Users should not be able to click on toolbar items when no messages are selected
+ - [x] Users should not be able to click on toolbar items when no messages are selected
 
 ## API Integration
 
@@ -185,7 +185,7 @@ When a user changes which messages are read / unread:
 
 **Add a 'compose' view:**
 
- - [ ] form appears when the |+| button is clicked
+ - [x] form appears when the |+| button is clicked
  - [ ] new entry is added to sidebar
 
 ### Specific Stories:
@@ -211,11 +211,19 @@ When a user adds or removes labels and refreshes the page:
 
 **Add the ability to compose messages**
 
+![Compose Form Load](Images/inbox-compose-form-1.png)
+
+
+![Compose Form Load](Images/inbox-compose-form-2.png)
+
 When a user goes to the app:
- - [ ] they should see a red plus button
+ - [x] they should see a red plus button
 
 When the user clicks the |+| button:
- - [ ] the compose form appears
+ - [x] the compose form appears
+
+When the user opens the compose form and presses the red compose button:
+ - [x] the compose form should close
 
 When the user fills out the subject and body and pressed Send:
  - [ ] the compose forms disappears
@@ -223,11 +231,3 @@ When the user fills out the subject and body and pressed Send:
 
 When the user refreshes the page:
  - [ ] the data is persisted: the new message still appears in the sidebar
-
-![Compose Form Load](Images/inbox-compose-form-1.png)
-
-
-![Compose Form Load](Images/inbox-compose-form-2.png)
-
-When the user opens the compose form and presses the red compose button:
- - [ ] the compose form should close

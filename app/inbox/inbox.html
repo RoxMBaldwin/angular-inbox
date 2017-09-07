@@ -1,3 +1,12 @@
-<toolbar datatoolbar="$ctrl.messages" ></toolbar>
-<composeform></composeform>
-<messagelist messagelistselected="$ctrl.messages" ></messagelist>
+<toolbar
+  plusicon="$ctrl.formstatuses"
+  datatoolbar="$ctrl.messages" >
+</toolbar>
+<composeform
+  formstatus= "$ctrl.formstatuses"
+  dataform="$ctrl.messages"
+  ng-hide="$ctrl.formstatuses.view">
+</composeform>
+<messagelist
+  messagelistselected="$ctrl.messages" >
+</messagelist>
