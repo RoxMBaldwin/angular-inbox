@@ -28,7 +28,7 @@
               message.starred = !message.starred
             })
           }
-    },
+      },
     templateUrl: 'app/message/message.html'
   })
 }());
